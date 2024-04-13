@@ -48,8 +48,6 @@ app.use(express.json());
 //before any routes that need to handle JSON data in the request body. This middleware is responsible for parsing JSON data from requests and
 //it should be applied at the beginning of your middleware stack to ensure it is available for all subsequent route handlers.
 
-//mongodb+srv://sudershanchandnani18122000:6iJ6lIiniRt8mTGd@cluster0.dpdx6i8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-
 //Mount the Router: To use the router in your main Express app, you can "mount" it at a specific URL prefix
 //since we are using router, it wont execute the app.METHOD, instead it will execute the router.METHOD which are inside the auth-router.js
 app.use("/api/auth", authRoute); //we can leave the path empty but its kind of a convention to call it api, REST api
